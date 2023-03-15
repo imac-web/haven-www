@@ -10,6 +10,8 @@ npm run start
 
 And then go to `localhost:1234`
 
-# [Link to deployed Landing Page](https://app.netlify.com/sites/beautiful-dieffenbachia-58568b)
+# [Link to deployed Landing Page](https://beautiful-dieffenbachia-58568b.netlify.app/)
 
 # [Link to Haven](https://tubular-kulfi-2c838f.netlify.app/)
+
+
