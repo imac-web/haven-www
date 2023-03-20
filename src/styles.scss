@@ -70,3 +70,23 @@ a {
 .btn {
   
 }
+
+.container {
+  max-width: 1070px;
+  margin: auto;
+}
+
+.partners {
+  background-color: #0E1823;
+
+  .partners-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4em 0;
+  }
+
+  img {
+    max-width: 230px;
+  }
+}
