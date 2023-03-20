@@ -126,3 +126,87 @@ a {
   }
   
 }
+
+.team {
+  background-color: #141731;
+  .team-members {
+    display: flex;
+    padding: 5em;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    .team-member {
+      width: 23%;
+      img {
+        border-radius: 50%;
+      }
+      h3 {
+        margin-top: 2em;
+        font-size: 20px;
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+    
+  }
+}
+
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #27ae60;
+}
