@@ -3,7 +3,7 @@
 
 body {
 }
-
+//Hero
 .hero {
   height: 100%;
   background: #0E1823;
@@ -15,19 +15,6 @@ body {
   position: relative;
   background-position: center;
   background-size: cover;
-
-  .hero-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: linear-gradient(358deg, rgb(2, 0, 36) 0%, rgba(0, 0, 0, 0.5) 35%, rgb(24 23 55 / 34%) 100%);    z-index: 0;
-  }
-  .inner-hero {
-    position: relative;
-    z-index: 1;
-    margin-top: 1.4em;
-    text-align: center;
-  }
   h1 {
     font-size: 2.4em;
     margin-bottom: 0.8333333333vw;
@@ -40,28 +27,59 @@ body {
     font-size: 3em;
     font-weight: 600;
   }
-
-  p {
-    margin-top: 4.3em;
-    color: #fff;
-    max-width: 31%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.2em;
+  @media screen and (max-width: 768px) {
+    p {
+      margin-top: 1.5em;
+      max-width: none;
+      text-align: left;
+    }
   }
+}
 
-  .btn-hero {
-    background-color: #fff;
-    color: #000;
-    padding: 13px 22px;
-    margin-top: 10%;
-    border-radius: 3px;
+.inner-hero {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.4em;
+  text-align: center;
+  align-items: flex-end;
+}
+.hero-paragraph {
+  margin-top: 4.3em;
+  color: #fff;
+  max-width: 31%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 768px) {
+    .inner-hero {
+      position: relative;
+      bottom: initial;
+      left: initial;
+      transform: initial;
+      text-align: left;
+      margin-top: 3.4em;
+      padding: 0 1.5em;
+    }
+  }
+.btn-hero {
+    background-color: #ffffff;
+    color: #0E1823;
+    padding: 15px 30px;
+    border-radius: 30px;
     display: inline-block;
     font-size: 18px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
   }
-}
+  .btn-hero:hover {
+    background-color: #40DF9F;
+    color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+
 
 a {
   text-decoration: none;;
@@ -72,12 +90,18 @@ a {
   margin: 1em 0;
   display: inline-block;
 }
+@media only screen and (max-width: 767px) {
+  .hero p {
+    display: none;
+  }
+}
 
 .container {
   max-width: 1070px;
   margin: auto;
 }
 
+//partners
 .partners {
   background-color: #0E1823;
 
@@ -91,8 +115,24 @@ a {
   img {
     max-width: 230px;
   }
-}
 
+  /* Media query for screens with a maximum width of 768px */
+  @media screen and (max-width: 768px) {
+    .partners-items {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5em 0;
+    }
+    img {
+      max-width: 150px;
+      margin-bottom: 1em;
+    }
+    img:not(:last-child) {
+      margin-bottom: 2em;
+    }
+  }
+}
+//our features
 .our-features {
   background-color: #fff;
 
@@ -153,7 +193,7 @@ a {
 }*/
 
 
-//test2
+//our team
 .team {
   padding: 80px 0;
   background-color: #0E1823;
@@ -219,6 +259,14 @@ a {
   margin-bottom: 10px;
 }
 
+.team-member p {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .team-member a {
   font-size: 24px;
   color: #0a71c7;
@@ -232,10 +280,10 @@ a {
   font-size: 24px;
   color: #0a71c7;
   margin: 10px;
-  text-decoration: none; /* remove underline */
+  text-decoration: none; 
 }
 .team-member h3 a:hover {
-  color: #0E1823; /* change color on hover */
+  color: #0E1823; 
 }
 
 @media (max-width: 768px) {
