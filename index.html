@@ -1,238 +1,326 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="src/styles.scss" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.example.com">
-    <!-- Robots -->
-    <meta name="robots" content="noindex, nofollow">
-    <!-- Device -->
-    <!-- <meta name="viwport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
-    <meta name="format-detection" content="telephone=no">
-    <!-- Title -->
-    <title>Haven</title>
-    <!-- Description -->
-    <meta name="description" content="Home description.">
-    <!-- Social -->
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Quick Parcel Project — Home">
-    <meta name="twitter:description" content="Home description.">
-    <meta name="twitter:image" content="#">
-    <!-- Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com">
-    <meta property="og:title" content="Quick Parcel Project — Home">
-    <meta property="og:description" content="Home description.">
-    <meta property="og:image" content="#">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <!-- Favicon -->
-    <meta name="theme-color" content="#fff">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>HAVEN</title>
+  <meta name="title" content="Haven">
+  <meta name="description" content="description.">
+  <meta name="keywords" content=" ">
+  <meta name="author" content=" ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Haven">
+  <meta property="og:description" content="description.">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="">
+  <meta property="twitter:title" content="Haven">
+  <meta property="twitter:description" content="description.">
+  <link href="images/thumbnail.jpg" rel="apple-touch-icon">
+  <link href="images/havenlogo.ico" rel="shortcut icon">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <!-- contact us form -->
+  <div class="modal">
+    <button type="button" class="modal-close modal-toggle"><i class="icon" data-feather="x"></i><span
+        class="hide-mobile">ESC</span></button>
+    <div class="modal-content">
+      <div class="success">
+        <a href="index.html" class="logo">
+          <img src="images/black_haven_text_bottom.png" alt="logo">
+        </a>
+        <h2 class="modal-title first-name" id="title-name"></h2>
+        <p>Vous êtes dans la liste! Nous vous contacterons.</p>
+        <a href="index.html" class="button">Retour à la page d'accueil</a>
+      </div>
+      <div class="form-content">
+        <a href="index.html" class="logo">
+          <img src="images/black_haven_text_bottom.png" alt="logo">
+        </a>
+        <h2 class="modal-title">Contactez-nous</h2>
+        <p class="modal-subtitle">Veuillez remplir le formulaire ci-dessous et nous vous répondrons dès que possible.
+        </p>
+        <form class='form' name='contactForm' method='POST'>
+          <input type='hidden' name='form-name' value='contactForm' />
+          <div class="group">
+            <input type="text" id="name" name="name" placeholder="&nbsp;" autocomplete="off" required>
+            <label for="name">Nom</label>
+            <span class="border"></span>
+          </div>
+          <div class="group">
+            <input type="email" name="email" placeholder="&nbsp;" autocomplete="off" required>
+            <label for="email">E-mail</label>
+            <span class="border"></span>
+          </div>
+          <div class="group">
+            <input name="message" placeholder="&nbsp;" autocomplete="off" required></input>
+            <label for="message">Message</label>
+            <span class="border"></span>
+          </div>
+          <button type="submit" class="button">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <section class="hero">
-        <nav class="navbar">
-            <div class="logo-container">
-                <h1>Haven</h1>
+  <!-- Hero section -->
+  <div class="content">
+    <a href="index.html" class="logo">
+      <img src="images/black_haven_text.png" alt="logo">
+    </a>
+    <div class="hero">
+      <h1 class="title">Découvrez l'emplacement idéal pour vous !</h1>
+      <h2 class="title shift clip">
+        <span class="word-shift">
+          <b class="is-visible">Qualité de vie ?&nbsp;</b>
+          <b>Confort de vie ?</b>
+          <b>Qualité de l'eau ?</b>
+          <b>risques industriels ?</b>
+          <b>Proximité d'écoles ?</b>
+          <b>Proximité de Gare SNCF ?</b>
+          <b>Proximité de professionnels de santé ?</b>
+        </span>
+      </h2>
+      <a href="https://haven-pwa.netlify.app/" class="button ">Commencer</a>
+      <p class="subtitle">Vérifiez à quel point une adresse est habitable.</p>
+    </div>
+    <div class="screen-wrapper">
+      <img src="images/screen1.png" class="screen" alt="screen" />
+    </div>
+    <section class="section section-features">
+      <h2 class="title">Comment nous évaluons ?</h1>
+        <div class="features">
+          <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay" />
+          <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay" />
+          <img src="images/overlay-top.svg" class="overlay-top show-mobile" alt="overlay" />
+          <img src="images/overlay-bottom.svg" class="overlay-bottom show-mobile" alt="overlay" />
+          <div class="row donts">
+            <div class="feature"><i class="icon" data-feather="x"></i>Pollution sonore</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Taux élevé de criminalité</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Mauvaise qualité de l'air</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Espace de stationnement limité</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Bâtiments anciens et délabrés</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Difficulté de trajet</div>
+            <!-- Repeat-->
+            <div class="feature"><i class="icon" data-feather="x"></i>Pollution sonore</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Taux élevé de criminalité</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Mauvaise qualité de l'air</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Espace de stationnement limité</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Bâtiments anciens et délabrés</div>
+            <div class="feature"><i class="icon" data-feather="x"></i>Difficulté de trajet</div>
+          </div>
+          <div class="row dos">
+            <div class="feature"><i class="icon" data-feather="check"></i>Proximité des écoles</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Facilité d'accès aux transports en commun
             </div>
-        </nav>
-        <div class="container">
-            <div class="inner-hero">
-                <h2>Découvrez<br>l'emplacement idéal pour vous</h2>
-                <p class="hero-paragraph">Nous prenons en compte la proximité des transports en commun, la sécurité, le
-                    niveau de bruit, et les écoles environnantes pour vous aider à trouver votre futur chez-vous.</p>
-                <a href="https://haven-pwa.netlify.app/" class="btn btn-hero" role="button">Commencer</a>
+            <div class="feature"><i class="icon" data-feather="check"></i>Quartier sûr et sécurisé</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Beau paysage</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Emplacement pratique</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Équipements modernes</div>
+            <!-- Repeat-->
+            <div class="feature"><i class="icon" data-feather="check"></i>Proximité des écoles</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Facilité d'accès aux transports en commun
             </div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Quartier sûr et sécurisé</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Beau paysage</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Emplacement pratique</div>
+            <div class="feature"><i class="icon" data-feather="check"></i>Équipements modernes</div>
+          </div>
         </div>
+        <!-- <p>If you’re looking for an email client with more features, try <a href="">these</a>.</p> -->
     </section>
-
-
-    <!--
-
-
-    <section class="partners">
-        <div class="container">
-            <div class="partners-items">
-
-                <div class="partner">
-                    <img src="./assets/img/imac.png" alt="">
-                </div>
-                <div class="partner">
-                    <img src="./assets/img/ge.png" alt="">
-                </div>
-                <div class="partner">
-                    <img src="./assets/img/esipe.png" alt="">
-                </div>
-            </div>
+    <section class="section section-providers">
+      <h2 class="title">Notre équipe</h2>
+      <div class="cards">
+        <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay" />
+        <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay" />
+        <div class="slider">
+          <div class="slide"> <a href="https://www.linkedin.com/in/user1">
+              <div class="member-image">
+                <img src="images/raph.png" alt="Membre de l'équipe 1">
+              </div>
+              <h3>Raphaël Nanni </h3>
+              <p> Tuteur enseignant </p>
+            </a>
+            <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="slide"> <a href="https://www.linkedin.com/in/user2">
+              <div class="member-image">
+                <img src="images/adam.png" alt="Membre de l'équipe 2">
+              </div>
+              <h3>Adam Ferreira </h3>
+              <p> Back-end dev </p>
+            </a>
+            <a href="https://www.linkedin.com/in/user2" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="slide"> <a href="https://www.linkedin.com/in/user1">
+              <div class="member-image">
+                <img src="images/sully.png" alt="Membre de l'équipe 1">
+              </div>
+              <h3>Sully-Ann Sorimoutou </h3>
+              <p> Back-end dev </p>
+            </a>
+            <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="slide"> <a href="https://www.linkedin.com/in/user2">
+              <div class="member-image">
+                <img src="images/leo.png" alt="Membre de l'équipe 2">
+              </div>
+              <h3>Léo Genot </h3>
+              <p> Front-end dev </p>
+            </a>
+            <a href="https://www.linkedin.com/in/user2" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="slide"> <a href="https://www.linkedin.com/in/user2">
+              <div class="member-image">
+                <img src="images/achraf.png" alt="Membre de l'équipe 2">
+              </div>
+              <h3>Achraf Lemghari </h3>
+              <p> Front-end dev </p>
+            </a>
+            <a href="https://www.linkedin.com/in/user2" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
+      </div>
+  </div>
 
-    </section>
-    -->
-    <section class="partners">
-        <div class="container">
-            <div class="partner-members">
-                <div class="partner-member">
-                    <a href="https://www.ingenieur-imac.fr/">
-                        <div class="partner-image">
-                            <img src="./assets/img/imac.png" alt="IMAC-Formation d'ingénieur Imac">
-                        </div>
-                    </a>
-                </div>
-                <div class="partner-member">
-                    <a href="https://www.univ-gustave-eiffel.fr/">
-                        <div class="partner-image">
-                            <img src="./assets/img/ge.png" alt="UGE-Université Gustave-Eiffel ">
-                        </div>
-                    </a>
-                </div>
-                <div class="partner-member">
-                    <a href="https://esipe.univ-gustave-eiffel.fr/">
-                        <div class="partner-image">
-                            <img src="./assets/img/esipe.png" alt="ESIPE-École Supérieure d’Ingénieurs de Paris-Est">
-                        </div>
-                    </a>
-                </div>
+  </section>
+
+  <section class="partners">
+    <div class="container">
+      <div class="partner-members">
+        <div class="partner-member">
+          <a href="https://www.ingenieur-imac.fr/">
+            <div class="partner-image">
+              <img src="images/imac.png" alt="IMAC-Formation d'ingénieur Imac">
             </div>
+          </a>
         </div>
-    </section>
-
-    <section class="our-features">
-        <div class="container">
-            <div class="features">
-                <div class="features-img">
-                    <img src="./assets/img/hero-bg.png" alt="">
-                </div>
-                <div class="features-text">
-                    <h4>How we calculate it</h4>
-                    <h2>Our features and APIs</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos dolor eveniet animi aut
-                        architecto sapiente voluptatibus tenetur, sunt modi ratione at excepturi perferendis quam, fugit
-                        libero magni? Aut, soluta quibusdam.</p>
-                    <a href="#" class="btn">Laern more ></a>
-                </div>
+        <div class="partner-member">
+          <a href="https://www.univ-gustave-eiffel.fr/">
+            <div class="partner-image">
+              <img src="images/ge.png" alt="UGE-Université Gustave-Eiffel ">
             </div>
+          </a>
         </div>
-    </section>
-
-    <section class="team">
-        <div class="container">
-            <h2>Notre équipe</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/user1">
-                        <div class="member-image">
-                            <img src="./assets/img/team-member.png" alt="Membre de l'équipe 1">
-                        </div>
-                        <h3>Nom du membre </h3>
-                        <p> Tuteur enseignant </p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/user1">
-                        <div class="member-image">
-                            <img src="./assets/img/team-member.png" alt="Membre de l'équipe 2">
-                        </div>
-                        <h3>Nom du membre </h3>
-                        <p>Developpeur Back-End </p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/user1">
-                        <div class="member-image">
-                            <img src="./assets/img/team-member.png" alt="Membre de l'équipe 3">
-                        </div>
-                        <h3>Nom du membre</h3>
-                        <p>Developpeur Back-End </p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/user1">
-                        <div class="member-image">
-                            <img src="./assets/img/team-member.png" alt="Membre de l'équipe 4">
-                        </div>
-                        <h3>Nom du membre</h3>
-                        <p>Developpeur Front-End </p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <div class="team-member">
-                    <a href="https://www.linkedin.com/in/user1">
-                        <div class="member-image">
-                            <img src="./assets/img/team-member.png" alt="Membre de l'équipe 5">
-                        </div>
-                        <h3>Nom du membre</h3>
-                        <p>Developpeur Front-End </p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-
+        <div class="partner-member">
+          <a href="https://esipe.univ-gustave-eiffel.fr/">
+            <div class="partner-image">
+              <img src="images/esipe.png" alt="ESIPE-École Supérieure d’Ingénieurs de Paris-Est">
             </div>
+          </a>
         </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contactez-nous</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-    <!-- 
-    <footer>
-        <div class="container">
-            <div class="logo-container">
-                <h1>Haven</h1>
-            </div>
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>About Haven</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>1234 Main St.</li>
-                        <li>Anytown, USA</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Email: info@haven.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2023 Haven. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-    -->
+      </div>
+    </div>
+  </section>
 
 
+  <section class="section cta">
+    <div class="cta-content">
+      <h1 class="title">Contactez-nous </h1>
+      <button class="button white modal-toggle">Contactez-nou</button>
+      <p class="subtitle">Veuillez remplir le formulaire ci-dessous et nous vous répondrons dès que possible</p>
+    </div>
+    <div class="zero-slider">
+      <div class="slide"><img src="images/screen-cta-1.png" alt="inboxzero" /></div>
+      <div class="slide"><img src="images/screen-cta-2.png" alt="inboxzero" /></div>
+  </section>
+  <footer class="footer">
+    <p>&copy; Haven</p>
+  </footer>
+  </div>
+  </div>
+  <script src="./js/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script>
 
-    <script type="module" src="src/index.ts"></script>
+    // Close modal on escape key
+    $(document).keyup(function (e) {
+      if (e.key === "Escape") {
+        $('.modal').removeClass('modal-show');
+        $('.content').removeClass('content-blurred');
+        $('body').removeClass('no-scroll');
+      }
+    });
+
+    $(function () {
+
+      // Provider card slider
+      $('.slider').flickity({
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+        cellAlign: 'center',
+        draggable: false,
+        freeScroll: false,
+        wrapAround: true,
+        pageDots: false,
+        autoPlay: 3000,
+      });
+
+      // Imbox zero slider
+      $('.zero-slider').flickity({
+        pauseAutoPlayOnHover: false,
+        prevNextButtons: false,
+        cellAlign: 'center',
+        freeScroll: false,
+        wrapAround: false,
+        draggable: false,
+        pageDots: false,
+        autoPlay: 3000,
+        fade: true,
+      });
+
+      // Open & close modal
+      $('.modal-toggle').click(function () {
+        $('.modal').toggleClass('modal-show');
+        $('.content').toggleClass('content-blurred');
+        $('body').toggleClass('no-scroll');
+      });
+
+      // Reserve username form
+      $(".form").submit(function (e) {
+        e.preventDefault();
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function () {
+          $('.form-content').addClass('form-content-hide');
+          $('.success').addClass('success-show');
+        });
+      });
+
+      // Save user's first name
+      $(".form").submit(function (e) {
+        e.preventDefault();
+        var value = $("#firstName").val();
+        $('.first-name').text("Thank you," + " " + value + "!");
+      });
+
+      // Feather icons
+      feather.replace()
+
+      // textarea autoresize
+      autosize(document.querySelectorAll('textarea'));
+      $('textarea').autoResize();
+
+
+      // ScrollReveal
+      ScrollReveal().reveal('.hero, .title, .screen, .features, .cards, .zero-slider', {
+        distance: '40px',
+        duration: 2000,
+        mobile: false,
+        reset: false,
+        opacity: 0
+      });
+
+    });
+  </script>
 
 </body>
 
