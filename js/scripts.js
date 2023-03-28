@@ -1,4 +1,6 @@
-  // Close modal on escape key
+jQuery( document ).ready(function( $ ) {
+ 
+ // Close modal on escape key
   $(document).keyup(function (e) {
     if (e.key === "Escape") {
       $('.modal').removeClass('modal-show');
@@ -76,3 +78,5 @@
     });
 
   });
+
+});
