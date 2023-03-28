@@ -553,7 +553,7 @@ button {
 }
 
 .screen-wrapper .screen {
-    margin: 0 auto -140px;
+    margin: 0 auto 0px;
     width: 1400px
 }
 
@@ -976,10 +976,14 @@ button {
     gap: 45px;
     padding-top: 60px;
 }
+.team h3{
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .slider .slide {
-    flex: 0 0 calc(20% - 20px); /* Set width of each slide to 20% minus 20px for margin */
-    margin: 10px; /* Add margin between slides */
+    flex: 0 0 calc(20% - 20px); 
+    margin: 10px; 
   }
 
 .slider .slide img {
