@@ -978,7 +978,7 @@ button {
 }
 .team h3{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .team .slide:hover {
