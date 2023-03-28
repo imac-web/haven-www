@@ -2,10 +2,11 @@
     "name": "haven",
     "source": "index.html",
     "scripts": {
-      "start": "parcel",
-      "build": "parcel build"
+        "lite": "lite-server",
+        "start": "npm run lite",
+        "build": "npm run lite"
     },
     "devDependencies": {
-      "parcel": "latest"
+        "lite-server": "^2.6.1"
     }
-  }
+}

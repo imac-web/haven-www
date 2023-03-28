@@ -1,6 +1,4 @@
-jQuery( document ).ready(function( $ ) {
- 
- // Close modal on escape key
+// Close modal on escape key
   $(document).keyup(function (e) {
     if (e.key === "Escape") {
       $('.modal').removeClass('modal-show');
@@ -10,18 +8,6 @@ jQuery( document ).ready(function( $ ) {
   });
 
   $(function () {
-
-    // Provider card slider
-    $('.slider').flickity({
-      pauseAutoPlayOnHover: false,
-      prevNextButtons: false,
-      cellAlign: 'center',
-      draggable: true,
-      freeScroll: true,
-      wrapAround: true,
-      pageDots: false,
-      autoPlay: 3000,
-    });
 
     // Imbox zero slider
     $('.zero-slider').flickity({
@@ -78,5 +64,3 @@ jQuery( document ).ready(function( $ ) {
     });
 
   });
-
-});
