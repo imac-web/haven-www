@@ -1,6 +1,7 @@
 {
     "name": "haven",
     "source": "index.html",
+    "main": "index.html",
     "devDependencies": {
         "lite-server": "^2.6.1"
     },
