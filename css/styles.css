@@ -156,8 +156,6 @@ input:-webkit-autofill {
     }
 }
 
-
-
 * {
     text-decoration: none;
     list-style: none;
@@ -1056,7 +1054,7 @@ button {
   }
   
   .partner-image {
-    max-width: 150px;
+    max-width: 200px;
     max-height: 150px;
     margin: 0 auto;
     position: relative;
