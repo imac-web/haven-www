@@ -3,11 +3,10 @@
     "source": "index.html",
     "main": "index.html",
     "devDependencies": {
-        "lite-server": "^2.6.1"
+      "lite-server": "^2.6.1"
     },
     "scripts": {
-        "lite": "lite-server",
-        "start": "npm run lite",
-        "build": "npm run lite"
+      "start": "lite-server",
+      "build": "lite-server"
     }
-}
+  }
