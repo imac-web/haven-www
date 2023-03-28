@@ -1,12 +1,12 @@
 {
     "name": "haven",
     "source": "index.html",
+    "devDependencies": {
+        "lite-server": "^2.6.1"
+    },
     "scripts": {
         "lite": "lite-server",
         "start": "npm run lite",
         "build": "npm run lite"
-    },
-    "devDependencies": {
-        "lite-server": "^2.6.1"
     }
 }

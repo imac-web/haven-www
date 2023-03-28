@@ -49,11 +49,6 @@
     // Feather icons
     feather.replace()
 
-    // textarea autoresize
-    autosize(document.querySelectorAll('textarea'));
-    $('textarea').autoResize();
-
-
     // ScrollReveal
     ScrollReveal().reveal('.hero, .title, .screen, .features, .cards, .zero-slider', {
       distance: '40px',
