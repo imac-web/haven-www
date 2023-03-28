@@ -554,7 +554,7 @@ button {
 
 .screen-wrapper .screen {
     margin: 0 auto -50px;
-    width: 1400px
+    width: 145vh;
 }
 
 .title {
@@ -698,6 +698,12 @@ button {
     filter: blur(40px)
 }
 
+@media (max-width: 1100px) {
+    .screen-wrapper .screen {
+        width: 100vh;
+    }
+}
+
 @media (max-width: 900px) {
     .hero {
         padding: 140px 0 60px
@@ -706,7 +712,7 @@ button {
     .screen-wrapper .screen {
         margin: 0 auto -40px;
         max-width: none;
-        width: 600px
+        width: 75vh;
     }
 
     .section {
@@ -1013,6 +1019,18 @@ button {
     }
 }
 
+@media (max-width: 768px) {
+    .screen-wrapper .screen {
+        width: 45vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .screen-wrapper .screen {
+        width: 30vh;
+    }
+}
+
 /*parteners css*/
 
 .partners {
@@ -1024,8 +1042,9 @@ button {
   
   .partner-members {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 90px;
     padding: 1.4em 0;
   }
   
@@ -1061,7 +1080,7 @@ button {
     .partner-members {
       flex-direction: column;
       align-items: center;
-      gap: 18px;
+      gap: 55px;
     }
     
     .partner-member {
