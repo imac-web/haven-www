@@ -22,6 +22,10 @@
   <link href="css/styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
@@ -137,56 +141,55 @@
         </div>
         <!-- <p>If you’re looking for an email client with more features, try <a href="">these</a>.</p> -->
     </section>
-    <section class="section section-providers">
+    <section class="section section-team">
       <h2 class="title">Notre équipe</h2>
       <div class="cards">
-        <img src="images/overlay-left.svg" class="overlay-left hide-mobile" alt="overlay" />
-        <img src="images/overlay-right.svg" class="overlay-right hide-mobile" alt="overlay" />
-        <div class="slider">
-          <div class="slide"> <a href="https://www.linkedin.com/in/user1">
-              <div class="member-image">
-                <img src="images/raph.png" alt="Membre de l'équipe 1">
-              </div>
+        <div class="team">
+          <div class="slide">
+            <a href="https://www.linkedin.com/in/user1">
+
+              <img src="images/raph.png" alt="Membre de l'équipe 1">
+
               <h3>Raphaël Nanni </h3>
               <p> Tuteur enseignant </p>
             </a>
-            <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
-          <div class="slide"> <a href="https://www.linkedin.com/in/user2">
-              <div class="member-image">
-                <img src="images/adam.png" alt="Membre de l'équipe 2">
-              </div>
+          <div class="slide">
+            <a href="https://www.linkedin.com/in/user2">
+
+              <img src="images/adam.png" alt="Membre de l'équipe 2">
+
               <h3>Adam Ferreira </h3>
               <p> Back-end dev </p>
             </a>
-            <a href="https://www.linkedin.com/in/user2" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
-          <div class="slide"> <a href="https://www.linkedin.com/in/user1">
-              <div class="member-image">
-                <img src="images/sully.png" alt="Membre de l'équipe 1">
-              </div>
+          <div class="slide">
+            <a href="https://www.linkedin.com/in/user1">
+
+              <img src="images/sully.png" alt="Membre de l'équipe 1">
+
               <h3>Sully-Ann Sorimoutou </h3>
               <p> Back-end dev </p>
             </a>
             <a href="https://www.linkedin.com/in/user1" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
-          <div class="slide"> <a href="https://www.linkedin.com/in/user2">
-              <div class="member-image">
-                <img src="images/leo.png" alt="Membre de l'équipe 2">
-              </div>
+          <div class="slide">
+            <a href="https://www.linkedin.com/in/user2">
+
+              <img src="images/leo.png" alt="Membre de l'équipe 2">
+
               <h3>Léo Genot </h3>
               <p> Front-end dev </p>
             </a>
-            <a href="https://www.linkedin.com/in/user2" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
-          <div class="slide"> <a href="https://www.linkedin.com/in/user2">
-              <div class="member-image">
-                <img src="images/achraf.png" alt="Membre de l'équipe 2">
-              </div>
+          <div class="slide">
+            <a href="https://www.linkedin.com/in/user2">
+
+              <img src="images/achraf.png" alt="Membre de l'équipe 2">
+
               <h3>Achraf Lemghari </h3>
               <p> Front-end dev </p>
             </a>
-            <a href="https://www.linkedin.com/in/user2" target="_blank"><i class="fab fa-linkedin"></i></a>
           </div>
         </div>
       </div>
@@ -227,7 +230,7 @@
     <div class="cta-content">
       <h1 class="title">Contactez-nous </h1>
       <button class="button white modal-toggle">Contactez-nou</button>
-      <p class="subtitle">Veuillez remplir le formulaire ci-dessous et nous vous répondrons dès que possible</p>
+      <p class="subtitle">Veuillez remplir le formulaire et nous vous répondrons dès que possible</p>
     </div>
     <div class="zero-slider">
       <div class="slide"><img src="images/screen-cta-1.png" alt="inboxzero" /></div>
@@ -258,8 +261,8 @@
         pauseAutoPlayOnHover: false,
         prevNextButtons: false,
         cellAlign: 'center',
-        draggable: false,
-        freeScroll: false,
+        draggable: true,
+        freeScroll: true,
         wrapAround: true,
         pageDots: false,
         autoPlay: 3000,

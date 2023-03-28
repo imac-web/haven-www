@@ -522,7 +522,13 @@ button {
     width: 100px;
     z-index: 2;
     top: 0;
-    font-weight: bold
+}
+
+.modal .logo {
+    height: 100px;
+    width: 60px;
+    z-index: 2;
+    top: 0;
 }
 
 .logo img {
@@ -595,8 +601,8 @@ button {
     max-width: 80%
 }
 
-.section-providers {
-    padding: 120px 0 0
+.section-team {
+    padding: 64px 0 64px 0;
 }
 
 
@@ -711,8 +717,8 @@ button {
         padding: 40px 0 0
     }
 
-    .section-providers {
-        padding: 80px 0 0
+    .section-team {
+        padding: 64px 0 64px 0;
     }
 
     .section.imagery {
@@ -933,23 +939,22 @@ button {
     }
 }
 /*team memeber image css*/
-.member-image {
+.member-card {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  pointer-events: none;
+    position: relative
 }
 
-.member-image img {
+.member-card img {
     width: 100%;
     height: auto;
   }
-.cards {
-    pointer-events: none;
-    position: relative
-}
+
 
 .flickity-viewport {
     overflow: visible
@@ -959,8 +964,23 @@ button {
     padding: 120px 0 100px;
     position: relative;
     overflow: hidden;
+    
     width: 100%
 }
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 60px;
+}
+
+.slider .slide {
+    flex: 0 0 calc(20% - 20px); /* Set width of each slide to 20% minus 20px for margin */
+    margin: 10px; /* Add margin between slides */
+  }
 
 .slider .slide img {
     -webkit-transform: scale(1);
@@ -996,7 +1016,7 @@ button {
   
   .partner-members {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1.4em 0;
   }
@@ -1009,14 +1029,14 @@ button {
   }
   
   .partner-image {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
   }
   
-  .member-image img {
+  .member-card img {
     width: 100%;
     height: auto;
   }
@@ -1033,6 +1053,7 @@ button {
     .partner-members {
       flex-direction: column;
       align-items: center;
+      gap: 18px;
     }
     
     .partner-member {
@@ -1045,7 +1066,7 @@ button {
 
 
 .modal {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 96%);
     pointer-events: none;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
