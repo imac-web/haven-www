@@ -1,0 +1,19 @@
+{
+  "name": "haven",
+  "version": "1.0.0",
+  "description": "Landing page for Haven Project, PWA vivability index of desired location",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imac-web/haven-www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imac-web/haven-www/issues"
+  },
+  "homepage": "https://github.com/imac-web/haven-www#readme"
+}
